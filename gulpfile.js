@@ -24,17 +24,18 @@ gulp.task('script', function(){
 
 gulp.task('vendorjs', function(){
     return gulp.src([
-        
+        './node_modules/jquery/dist/jquery.min.js',
+        './node_modules/gsap/src/minified/TweenMax.min.js'
     ])
     .pipe(concat({
         path: 'vendor.js'
     }))
-    .pipe(gulp.dest('./dev/js'));
+    .pipe(gulp.dest('./src/js'));
 });
 
 
 gulp.task('deploy', function() {
-    return gulp.src('./dev/**/*')
+    return gulp.src('./src/**/*')
     .pipe(ghPages());
 });
 
