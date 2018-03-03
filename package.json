@@ -1,0 +1,29 @@
+{
+  "name": "project_setting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "start": "gulp",
+    "a": "",
+    "b": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmkygl/project_setting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmkygl/project_setting/issues"
+  },
+  "homepage": "https://github.com/lmkygl/project_setting#readme"
+}
