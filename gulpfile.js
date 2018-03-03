@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var ghPages = require('gulp-gh-pages');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task('sass', function(){
     return gulp.src('./src/css/index.scss')
@@ -18,6 +19,7 @@ gulp.task('script', function(){
     .pipe(concat({
         path: 'client.js'
     }))
+    .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./src/js'));
 });

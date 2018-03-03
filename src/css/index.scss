@@ -1,3 +1,7 @@
-body{
-    background: lime;
-}
+@import './mixin/config.scss';
+@import './module/reset.scss';
+
+// layout
+@import './component/layout.scss';
+@import './component/grid.scss';
+
